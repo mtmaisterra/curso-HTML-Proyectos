@@ -1,0 +1,53 @@
+body {
+    font-family: sans-serif;   
+    margin: 1px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    background-color: #07113e;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;/*padding es el relleno*/
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 40px;
+}
+
+nav a:hover {
+    color: darkgoldenrod;
+}
+
+@media (max-width:680px){
+/*@media permite darle condicionales
+para los distintos dispositivos*/
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0;
+    }
+}
+
+
+
